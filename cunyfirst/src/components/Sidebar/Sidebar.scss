@@ -1,0 +1,28 @@
+$sidebarWidth: 12.5rem;
+
+.sidebar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: grid;
+	flex-direction: column;
+	padding: 0 1rem;
+	width: 12.5rem;
+	max-width: 12.5rem;
+	height: calc(100vh - 60px);
+	grid-row: 1 / -1;
+	grid-column: 1 / 2;
+	margin-top: 60px;
+	grid-template-rows: repeat(auto-fit, minmax(2rem, min-content));
+    // grid-row-gap: 1rem;
+    padding-top: 2rem;
+    border-right: 1px solid #DEDEDE;
+}
+
+.sidebar__title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding-left:.5rem;
+    color: #97BDD8;
+    text-transform: uppercase;
+}
